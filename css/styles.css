@@ -10,6 +10,7 @@
   --buttons-bgc: #f5f4fa;
   --background-color-hover: #188ce8;
   --header-bordeer-color: #ececec;
+  --portfolio-border-color: #eeeeee;
 }
 
 .page {
@@ -41,6 +42,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -249,8 +252,9 @@ img {
   margin-right: 0;
 }
 
-.commamd-list-img {
-  margin-bottom: 30px;
+.command-list-person {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .command-paragraph,
@@ -291,7 +295,17 @@ img {
 
 /* ----------------------PORTFOLIO------------------------ */
 /* ----------------------Buttons-------------------- */
+
+.portfolio-filter-list {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
 .filter-button {
+  margin-right: 8px;
+
   font-family: inherit;
   background-color: var(--buttons-bgc);
   border-radius: 4px;
@@ -314,12 +328,37 @@ img {
   color: var(--background-color);
 }
 /* -----------------------Gallery---------------------- */
+
+.potfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-item:nth-child(3n + 1) {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
 .portfolio-gallery {
+  padding-bottom: 4px;
+
   font-weight: bold;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+}
+
+.portfolio-gallery-item {
+  padding: 20px 24px;
+
+  border-bottom: 1px solid var(--portfolio-border-color);
 }
 
 .portfolio-text {
