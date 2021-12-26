@@ -162,6 +162,11 @@ img {
 }
 
 .hero-button {
+  padding: 10px 32px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
   font-family: inherit;
   background-color: var(--accent-color);
   color: var(--background-color);
@@ -191,7 +196,7 @@ img {
 }
 
 .feature-list-item {
-  width: calc((100% - 90px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
   margin-right: 30px;
 }
 
@@ -222,7 +227,7 @@ img {
 }
 
 .work-types-item {
-  width: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
 }
 
@@ -244,8 +249,12 @@ img {
 }
 
 .command-list-item {
-  width: calc((100% - 90px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
   margin-right: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .command-list-item:nth-child(4) {
@@ -255,6 +264,7 @@ img {
 .command-list-person {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--background-color);
 }
 
 .command-paragraph,
@@ -328,6 +338,9 @@ img {
   color: var(--background-color);
 }
 /* -----------------------Gallery---------------------- */
+.portfolio-filter-list-button {
+  maargin: 6px 22px;
+}
 
 .potfolio-list {
   display: flex;
@@ -335,7 +348,9 @@ img {
 }
 
 .portfolio-item {
-  width: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
+
+  justify-content: center;
   margin-right: 30px;
   margin-bottom: 30px;
 }
